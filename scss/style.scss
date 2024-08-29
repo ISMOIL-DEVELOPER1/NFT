@@ -1,0 +1,897 @@
+@font-face {
+    font-display: swap;
+    font-family: 'Work Sans';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/work-sans-v19-latin-regular.woff2') format('woff2');
+}
+
+@font-face {
+    font-display: swap;
+    font-family: 'Work Sans';
+    font-style: normal;
+    font-weight: 600;
+    src: url('../fonts/work-sans-v19-latin-600.woff2') format('woff2');
+}
+
+@font-face {
+    font-display: swap;
+    font-family: 'Work Sans';
+    font-style: normal;
+    font-weight: 700;
+    src: url('../fonts/work-sans-v19-latin-700.woff2') format('woff2');
+}
+
+@font-face {
+    font-display: swap;
+    font-family: 'Space Mono';
+    font-style: normal;
+    font-weight: 700;
+    src: url('../fonts/space-mono-v13-latin-700.woff2') format('woff2');
+}
+
+@font-face {
+    font-display: swap;
+    font-family: 'Space Mono';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/space-mono-v13-latin-regular.woff2') format('woff2');
+}
+
+body {
+    font-family: "Work Sans", sans-serif;
+    font-family: "Space Mono", sans-serif;
+    background-color: #2B2B2B;
+}
+
+.container {
+    max-width: 1050px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.header {
+    padding: 34px 0 34px 0;
+}
+
+.head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.head__navlist {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.head__navlinks {
+    font-family: Work Sans;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 22.4px;
+    text-decoration: none;
+    transition: all 0.1s linear;
+}
+
+.head__navlinks:hover {
+    color: #A259FF;
+}
+
+.head__btn {
+    width: 152px;
+    height: 60px;
+    border-radius: 20px;
+    border: none;
+    background-color: #A259FF;
+    font-family: Work Sans;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 22.4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    cursor: pointer;
+    transition: all 0.1s linear;
+}
+
+.head__btn:hover {
+    background-color: transparent;
+    border: 1px solid #A259FF;
+    color: #A259FF;
+}
+
+.hero-section {
+    padding: 80px 0 80px;
+}
+
+.hero {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.hero__title {
+    max-width: 500px;
+    color: #fff;
+    font-family: Work Sans;
+    font-size: 67px;
+    font-weight: 600;
+    line-height: 73.7px;
+    margin-bottom: 20px;
+}
+
+.hero__text {
+    color: #fff;
+    font-family: Work Sans;
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 35.2px;
+    margin-bottom: 30px;
+}
+
+.hero__btn {
+    width: 224px;
+    height: 60px;
+    background-color: #A259FF;
+    border-radius: 20px;
+    border: none;
+    color: #fff;
+    font-family: Work Sans;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 22.4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    cursor: pointer;
+    transition: all 0.1s linear;
+}
+
+.hero__btn:hover {
+    background-color: transparent;
+    border: 2px solid #A259FF;
+    color: #A259FF;
+}
+
+.hero__right-wrapper {
+    max-width: 510px;
+    background-color: #3B3B3B;
+    border-radius: 20px;
+}
+
+.hero__right-card-wrapper {
+    padding: 22px 20px 22px 20px;
+}
+
+.hero__right-card-title {
+    color: #fff;
+    font-family: Work Sans;
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 30.8px;
+    margin-bottom: 10px;
+}
+
+.hero__right-avatar-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.hero__right-card-text {
+    color: #fff;
+    font-family: Work Sans;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 22.4px;
+}
+
+.topnft-section {
+    padding: 80px 0 80px 0;
+}
+
+.topnft__top-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 60px;
+}
+
+.topnft__top-wrapper-title {
+    color: #fff;
+    font-family: Work Sans;
+    font-size: 38px;
+    font-weight: 600;
+    line-height: 45.6px;
+    margin-bottom: 10px;
+}
+
+.topnft__top-wrapper-text {
+    color: #fff;
+    font-family: Work Sans;
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 35.2px;
+}
+
+.topnft__top-wrapper-btn {
+    width: 247px;
+    height: 60px;
+    background-color: transparent;
+    border-radius: 20px;
+    border: 2px solid #A259FF;
+    color: #fff;
+    font-family: Work Sans;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 22.4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    cursor: pointer;
+    transition: all 0.1s linear;
+}
+
+.topnft__top-wrapper-btn:hover {
+    color: #A259FF;
+}
+
+.topnft__wrapper {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.topnft__wrapper-card {
+    padding: 20px;
+    width: 240px;
+    background-color: #3B3B3B;
+    text-align: center;
+    border-radius: 20px;
+}
+
+.topnft__wrapper-title {
+    margin-top: 20px;
+    color: #fff;
+    font-family: Work Sans;
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 30.8px;
+    margin-bottom: 5px;
+}
+
+.topnft__wrapper-name {
+    color: rgba(133, 133, 132);
+    font-family: Work Sans;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 22.4px;
+}
+
+.topnft__wrapper-price {
+    color: #fff;
+    font-family: Space Mono;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 22.4px;
+}
+
+.browse-section {
+    padding: 80px 0 80px 0;
+}
+
+.browse__title {
+    color: #fff;
+    font-family: Work Sans;
+    font-size: 38px;
+    font-weight: 600;
+    line-height: 45.6px;
+    margin-bottom: 60px;
+}
+
+.browse__card-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.browse__card {
+    width: 240px;
+    border-radius: 20px;
+    background-color: rgba(59, 59, 59, 1);
+}
+
+.browse__card-title {
+    padding: 20px 30px 25px 30px;
+    color: #fff;
+    font-family: Work Sans;
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 30.8px;
+}
+
+.discover-section {
+    padding: 80px 0 80px 0;
+}
+
+.discover__top-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.discover__top-title {
+    color: #fff;
+    font-family: Work Sans;
+    font-size: 38px;
+    font-weight: 600;
+    line-height: 45.6px;
+    margin-bottom: 10px;
+}
+
+.discover__top-text {
+    color: #fff;
+    font-family: Work Sans;
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 35.2px;
+}
+
+.discover__top-btn {
+    width: 187px;
+    height: 60px;
+    border: 2px solid #A259FF;
+    border-radius: 20px;
+    background-color: transparent;
+    color: #fff;
+    font-family: Work Sans;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 22.4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    cursor: pointer;
+    transition: all 0.1s linear;
+}
+
+.discover__top-btn:hover {
+    color: #A259FF;
+}
+
+.discover__wrapper {
+    margin-top: 60px;
+}
+
+.discover__card {
+    width: 330px;
+    background-color: rgba(59, 59, 59, 1);
+    border-radius: 20px;
+}
+
+.discover__card-margin {
+    padding: 20px 30px 25px 30px;
+}
+
+.discover__card-title {
+    color: #fff;
+    font-family: Work Sans;
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 30.8px;
+    margin-bottom: 5px;
+}
+
+.discover__card-content-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 27px;
+}
+
+.discover__card-content-text {
+    color: #fff;
+    font-family: Space Mono;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 22.4px;
+}
+
+.discover__d-flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.discover-price-name {
+    color: rgba(133, 133, 132, 1);
+    font-family: Space Mono;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 13.2px;
+    margin-bottom: 8px;
+}
+
+.discover-price-number {
+    color: #fff;
+    font-family: Space Mono;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 22.4px;
+}
+
+.discover__wrapper {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.join-section {
+    padding: 80px 0 80px 0;
+}
+
+.join__wrapper-margin {
+    display: flex;
+    align-items: center;
+    gap: 80px;
+    background-color: rgba(59, 59, 59, 1);
+    padding: 60px;
+    border-radius: 20px;
+}
+
+.join__content-title {
+    color: #fff;
+    max-width: 420px;
+    font-family: Work Sans;
+    font-size: 38px;
+    font-weight: 600;
+    line-height: 45.6px;
+    margin-bottom: 10px;
+}
+
+.join__content-text {
+    color: #fff;
+    font-family: Work Sans;
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 35.2px;
+    margin-bottom: 40px;
+}
+
+.join__content-input {
+    width: 224px;
+    height: 60px;
+    border-radius: 20px;
+    outline: none;
+    padding: 0 20px;
+    border: none;
+    transition: all 0.1s linear;
+}
+
+.join__content-input:focus {
+    background-color: #A259FF;
+    color: #fff;
+}
+
+.join__content-input:focus::placeholder {
+    color: #fff;
+}
+
+.join__content-form {
+    display: flex;
+    align-items: center;
+}
+
+.join__content-input::placeholder {
+    color: rgba(43, 43, 43, 1);
+    font-family: Work Sans;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 22.4px;
+}
+
+.join__content-right-btn {
+    position: relative;
+    right: 50px;
+    width: 211px;
+    height: 60px;
+    border-radius: 20px;
+    border: none;
+    background-color: rgba(162, 89, 255, 1);
+    color: #fff;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 22.4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    cursor: pointer;
+    transition: all 0.1s linear;
+}
+
+.join__content-right-btn:hover {
+    background-color: rgba(59, 59, 59, 1);
+    border: 2px solid #A259FF;
+    color: #A259FF;
+}
+
+.footer__wrapper-subtext {
+    max-width: 238px;
+    color: rgba(204, 204, 204, 1);
+    font-family: Work Sans;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 22.4px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+.footer__wrapper-text {
+    color: rgba(204, 204, 204, 1);
+    font-family: Work Sans;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 22.4px;
+    margin-bottom: 15px;
+}
+
+.footer__icon-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.footer {
+    max-width: 897px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 76px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer__navlinks-title {
+    color: #fff;
+    margin-bottom: 25px;
+    font-family: Space Mono;
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 35.2px;
+}
+
+.footer__item {
+    margin-bottom: 20px;
+}
+
+.footer__links {
+    color: rgba(204, 204, 204, 1);
+    font-family: Work Sans;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 22.4px;
+    text-decoration: none;
+}
+
+.footer__links:hover {
+    color: #fff;
+}
+
+.footer__right-title {
+    color: #fff;
+    font-family: Space Mono;
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 35.2px;
+    margin-bottom: 25px;
+}
+
+.footer__right-text {
+    color: rgba(204, 204, 204, 1);
+    font-family: Work Sans;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 22.4px;
+    max-width: 330px;
+}
+
+.hamburger-menu {
+    width: 40px;
+    height: 40px;
+    background-color: transparent;
+    border: none;
+    display: none;
+}
+
+.topnft__top-btn {
+    margin-top: 40px;
+    width: 315px;
+    height: 60px;
+    border: 2px solid #A259FF;
+    background: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    border-radius: 20px;
+    color: #fff;
+    font-family: Work Sans;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 22.4px;
+    display: none;
+}
+
+.discover__topbtn {
+    margin-top: 40px;
+    width: 315px;
+    height: 60px;
+    border: 2px solid #A259FF;
+    background: transparent;
+    border-radius: 20px;
+    color: #fff;
+    font-family: Work Sans;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 22.4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    display: none;
+}
+
+.discover__card-1 {
+    background-color: rgba(59, 59, 59, 1);
+    border-radius: 20px;
+}
+
+@media only screen and (max-width: 1007px) {
+    .head__navlist {
+        display: none;
+    }
+
+    .hamburger-menu {
+        display: block;
+    }
+
+    .hero__right-img {
+        max-width: 330px;
+    }
+
+    .hero__right-wrapper {
+        max-width: 330px;
+        margin: 0 auto;
+    }
+
+    .hero__title {
+        font-size: 38px;
+        max-width: 330px;
+        line-height: 45px;
+    }
+
+    .hero__text {
+        font-size: 16px;
+        line-height: 22px;
+        max-width: 330px;
+    }
+
+    .topnft__top-wrapper {
+        max-width: 100%;
+    }
+
+    .topnft__top-wrapper-title {
+        font-size: 28px;
+    }
+
+    .topnft__top-wrapper-text {
+        font-size: 16px;
+        max-width: 343px;
+    }
+
+    .topnft__wrapper {
+        flex-wrap: wrap;
+    }
+
+    .topnft__top-wrapper-btn {
+        width: 162px;
+    }
+
+    .topnft__wrapper {
+        padding-left: 50px;
+    }
+
+    .topnft__wrapper-card {
+        max-width: 330px;
+        display: flex;
+        align-items: center;
+        gap: 14px;
+    }
+
+    .topnft__wrapper-card img {
+        width: 60px;
+        height: 60px;
+    }
+
+    .topnft__wrapper-name {
+        font-size: 14px;
+    }
+
+    .topnft__wrapper-price {
+        font-size: 14px;
+    }
+
+    .browse__title {
+        font-size: 28px;
+    }
+
+    .browse__card {
+        max-width: 150px;
+    }
+
+    .browse__card img {
+        max-width: 150px;
+    }
+
+    .browse__card-wrapper {
+        flex-wrap: wrap;
+    }
+
+    .browse__card-title {
+        font-size: 12px;
+    }
+
+    .discover__top-wrapper{
+        width: 95%;
+    }
+
+    .discover__wrapper {
+        flex-wrap: wrap;
+    }
+
+    .discover__card-1 {
+        display: none;
+    }
+
+    .discover__top-title {
+        font-size: 28px;
+    }
+
+    .discover__top-text {
+        font-size: 16px;
+    }
+
+    .discover__card {
+        max-width: 315px;
+    }
+
+    .discover__card img {
+        max-width: 315px;
+    }
+
+
+    .join {
+        max-width: 690px;
+    }
+
+    .join__content-title {
+        font-size: 28px;
+        max-width: 300px;
+    }
+
+    .join__content-text {
+        font-size: 16px;
+    }
+
+    .join__wrapper-margin {
+        display: flex;
+        align-items: center;
+        gap: 30px;
+    }
+
+    .join__content-form {
+        display: none;
+    }
+
+
+    .join__img {
+        width: 300px;
+        height: 300px;
+        object-fit: contain;
+    }
+
+    .footer {
+        flex-wrap: wrap;
+        width: 90%;
+    }
+
+    .footer__wrapper-subtext {
+        font-size: 16px;
+    }
+
+    .footer__wrapper-text {
+        font-size: 16px;
+    }
+    
+    .footer__navlinks{
+        margin-top: 30px;
+    }
+
+}
+
+@media only screen and (max-width: 671px) {
+
+    .topnft__wrapper {
+        padding-left: 20px;
+    }
+
+    .topnft__top {
+        max-width: 690px;
+    }
+
+    .hero {
+        padding: 0px;
+        flex-direction: column-reverse;
+    }
+
+    .topnft__top-wrapper-title {
+        font-size: 28px;
+    }
+
+    .topnft__top-wrapper-text {
+        font-size: 16px;
+    }
+
+    .topnft__top-wrapper-btn {
+        display: none;
+    }
+
+    .topnft__top-btn {
+        display: block;
+    }
+
+    .discover__card {
+        max-width: 315px;
+    }
+
+    .discover__card img {
+        max-width: 315px;
+    }
+
+    .discover__topbtn {
+        display: block;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 12px;
+    }
+
+    .join__wrapper-margin {
+        padding: 10px;
+        max-width: 315px;
+        background-color: transparent;
+        flex-wrap: wrap;
+    }
+
+    .join__content-title {
+        font-size: 28px;
+    }
+
+    .join__content-text {
+        font-size: 16px;
+    }
+
+    .footer {
+        width: 80%;
+    }
+
+}
